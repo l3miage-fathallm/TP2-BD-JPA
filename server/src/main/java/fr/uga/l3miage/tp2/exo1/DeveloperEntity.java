@@ -11,6 +11,6 @@ public class DeveloperEntity {
     private String lastname;
     private String firstname;
     private String email;
-    @ManyToMany(mappedBy = "developers")
-    private Set<ProjetEntity>projets;
+    @ManyToMany
+    private Set<ProjetEntity>projet;
 }
