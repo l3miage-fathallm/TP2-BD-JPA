@@ -1,9 +1,6 @@
-package fr.uga.l3miage.tp2.exo1;
+package fr.uga.l3miage.tp2.exo1.models;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.ManyToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.math.BigInteger;
 import java.util.Set;
 
@@ -11,8 +8,11 @@ import java.util.Set;
 @Table(name = "projet")
 public class ProjetEntity {
 @Id
-    private BigInteger id;
+@Column(name = "id")
+private long id;
+@Column(name = "name")
 private String name;
+@Column(name = "description")
 private String description;
 @ManyToMany(mappedBy = "projet")
     private Set<DeveloperEntity>developers;

@@ -1,4 +1,6 @@
-package fr.uga.l3miage.tp2.exo1;
+package fr.uga.l3miage.tp2.exo1.models;
+
+import fr.uga.l3miage.tp2.exo1.models.EtudiantEntity;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,7 +9,6 @@ import javax.persistence.Table;
 import java.util.Set;
 
 @Entity
-@Table(name = "ClubSportif")
 public class ClubSportifEntity {
 @Id
     private Long id;
