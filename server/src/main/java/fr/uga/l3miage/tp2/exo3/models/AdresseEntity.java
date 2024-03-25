@@ -1,19 +1,15 @@
-package fr.uga.l3miage.tp2.exo3;
+package fr.uga.l3miage.tp2.exo3.models;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
-import javax.persistence.Table;
 
 @Entity
-@Table
-public class Adresse {
+public class AdresseEntity {
 @Id
     private Long id;
 private String rue;
 private String numero;
 private String codePostal;
 private String ville;
-@OneToOne
-    private Client client;
 }

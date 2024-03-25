@@ -1,16 +1,15 @@
-package fr.uga.l3miage.tp2.exo3;
+package fr.uga.l3miage.tp2.exo3.models;
 
 import javax.persistence.*;
 import java.util.Set;
 
 @Entity
-@Table
-public class CategorieDeProduit {
+public class CategorieDeProduitEntity {
 @Id
     private Long id;
 private String nom;
 @ManyToOne
-    private Produit produit;
+    private ProduitEntity produit;
 @OneToMany(mappedBy = "categorieDeProduit")
-    private Set<Produit>produits;
+    private Set<ProduitEntity>produits;
 }
